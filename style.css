@@ -3,12 +3,21 @@ body {
     margin: 0;
 }
 
+footer {
+    bottom: 0;
+    height: 5rem;
+}
+
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;
 }
 
 .font-opensans {
     font-family: 'Open Sans', sans-serif;
+}
+
+.fontsize-title {
+    font-size: 3.5rem;
 }
 
 .bg-color-1 {
@@ -21,6 +30,10 @@ body {
 
 .txt-color-1 {
     color: #051937;
+}
+
+.icon-color {
+    color: red;
 }
 
 nav>div>a {
@@ -42,7 +55,22 @@ nav>div>a:hover {
     border-bottom: 5px solid #FC3E55;
 }
 
-.zone:hover {}
+.btn-cta {
+    background-color: #FC3E55;
+    color: white;
+    border-color: transparent;
+}
+
+.btn-cta:hover {
+    background-color: #c0283a;
+}
+
+.grid-zone {
+    /* outline: 1px dotted rgba(0, 0, 0, 0.3);
+    background-color: rgba(256, 256, 256, 0.75); */
+    /* outline: 1px solid transparent;
+    background-color: transparent; */
+}
 
 .triangle {
     width: 25%;
@@ -53,6 +81,10 @@ nav>div>a:hover {
     width: 75%;
     /* padding-top: 15%; */
     vertical-align: middle;
+}
+
+.hero-title:hover>.triangle {
+    background-color: yellow;
 }
 
 
