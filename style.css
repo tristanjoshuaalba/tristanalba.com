@@ -1,6 +1,8 @@
+html,
 body {
     width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -29,7 +31,8 @@ footer {
 }
 
 .txt-color-1 {
-    color: #051937;
+    /* color: #051937; */
+    color: #FC3E55;
 }
 
 .icon-color {
@@ -38,21 +41,25 @@ footer {
 
 nav>div>a {
     /* color: red; */
-    padding-bottom: 12.5px;
-    border-bottom: 5px solid transparent;
+    /* padding-bottom: 12.5px;
+    border-bottom: 5px solid transparent; */
 }
 
 nav>div>a:active {
     /* color: red; */
-    padding-bottom: 12.5px;
-    border-bottom: 5px solid #FC3E55;
+    /* padding-bottom: 12.5px;
+    border-bottom: 5px solid #FC3E55; */
 }
 
 nav>div>a:hover {
     /* color: red; */
-    color: white;
+    /* color: white;
     padding-bottom: 12.5px;
-    border-bottom: 5px solid #FC3E55;
+    border-bottom: 5px solid #FC3E55; */
+}
+
+nav {
+    background-color: #051937;
 }
 
 .btn-cta {
@@ -72,19 +79,214 @@ nav>div>a:hover {
     background-color: transparent; */
 }
 
-.triangle {
-    width: 25%;
-    padding-top: .75rem;
-}
 
-.curve {
-    width: 75%;
-    /* padding-top: 15%; */
-    vertical-align: middle;
-}
+/* .triangle { */
 
-.hero-title:hover>.triangle {
+
+/* width: 25%;
+    padding-top: .75rem; */
+
+
+/* } */
+
+
+/* .curve { */
+
+
+/* width: 75%; */
+
+
+/* padding-top: 15%; */
+
+
+/* vertical-align: middle; */
+
+
+/* } */
+
+
+/* .hero-title:hover {
     background-color: yellow;
+} */
+
+.shift-x {
+    transform: translate(25px, 0);
+    -webkit-transform: translate(25px, 0);
+    /** Chrome & Safari **/
+    -o-transform: translate(25px, 0);
+    /** Opera **/
+    -moz-transform: translate(25px, 0);
+    /** Firefox **/
+    transition: all 1s ease-in-out;
+}
+
+.shift-left {
+    transform: translate(-25px, 0);
+    -webkit-transform: translate(-25px, 0);
+    /** Chrome & Safari **/
+    -o-transform: translate(-25px, 0);
+    /** Opera **/
+    -moz-transform: translate(-25px, 0);
+    /** Firefox **/
+    transition: all 1.5s ease-in-out;
+}
+
+.logo-tristan {
+    /* display: grid; */
+    background-image: url("./icon-items.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50% 50%;
+    /* background-color: yellow; */
+    width: 3rem;
+    height: 3rem;
+    /* border: 2px solid yellow; */
+}
+
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+.Navbar {
+    background-color: #46ACC2;
+    display: flex;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.Navbar__Link {
+    padding-right: 8px;
+}
+
+
+/* .Navbar__Items {
+    display: flex;
+} */
+
+.Navbar__Items--right {
+    margin-left: auto;
+}
+
+.Navbar__Link-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 960px) {
+    .Navbar__Items,
+    .Navbar {
+        flex-direction: column;
+    }
+    .Navbar__Items {
+        display: none;
+    }
+    .Navbar__Items--right {
+        margin-left: 0;
+    }
+    .Navbar__ToggleShow {
+        display: inline-block;
+    }
+    .Navbar__Link-toggle {
+        align-self: flex-end;
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+        /* flex-direction: row; */
+    }
+}
+
+@media (--breakpoint-not-small) {
+    .fontsize-title {
+        font-size: 3.5rem;
+    }
+    /* .nav-links {
+        display: none;
+        background-color: yellow;
+    } */
+    /* .f-6-ns,
+    .f-headline-ns { font-size: 6rem; }
+    .f-5-ns,
+    .f-subheadline-ns { font-size: 5rem; }
+    .f1-ns { font-size: 3rem; }
+    .f2-ns { font-size: 2.25rem; }
+    .f3-ns { font-size: 1.5rem; }
+    .f4-ns { font-size: 1.25rem; }
+    .f5-ns { font-size: 1rem; }
+    .f6-ns { font-size: .875rem; }
+    .f7-ns { font-size: .75rem; } */
+}
+
+@media (--breakpoint-medium) {
+    .fontsize-title {
+        font-size: 2rem;
+    }
+    /* .f-6-m,
+    .f-headline-m { font-size: 6rem; }
+    .f-5-m,
+    .f-subheadline-m { font-size: 5rem; }
+    .f1-m { font-size: 3rem; }
+    .f2-m { font-size: 2.25rem; }
+    .f3-m { font-size: 1.5rem; }
+    .f4-m { font-size: 1.25rem; }
+    .f5-m { font-size: 1rem; }
+    .f6-m { font-size: .875rem; }
+    .f7-m { font-size: .75rem; } */
+}
+
+@media (--breakpoint-large) {
+    .fontsize-title {
+        font-size: 3.5rem;
+    }
+    /* .f-6-l,
+    .f-headline-l {
+      font-size: 6rem;
+    }
+    .f-5-l,
+    .f-subheadline-l {
+      font-size: 5rem;
+    }
+    .f1-l { font-size: 3rem; }
+    .f2-l { font-size: 2.25rem; }
+    .f3-l { font-size: 1.5rem; }
+    .f4-l { font-size: 1.25rem; }
+    .f5-l { font-size: 1rem; }
+    .f6-l { font-size: .875rem; }
+    .f7-l { font-size: .75rem; } */
 }
 
 
@@ -369,6 +571,9 @@ nav>div>a:hover {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         padding: 0 .5rem;
+    }
+    .fontsize-title {
+        font-size: 3rem;
     }
 }
 
